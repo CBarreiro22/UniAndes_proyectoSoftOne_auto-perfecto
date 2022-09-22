@@ -42,5 +42,5 @@ jobs:
         - name: automerge
           uses: 'CBarreiro22/UniAndes_proyectoSoftOne_auto-perfecto@main'
           env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
             MERGE_LABELS: ""
