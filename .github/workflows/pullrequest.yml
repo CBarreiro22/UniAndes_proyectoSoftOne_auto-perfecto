@@ -42,7 +42,6 @@ jobs:
       - name: automerge
         uses: CBarreiro22/direct-merge-action@main
         with:
-          branch: "develop"
-          base: main
-          title: "demo"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          source-branch: develop
+          target-branch: main
