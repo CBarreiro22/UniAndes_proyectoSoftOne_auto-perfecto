@@ -34,3 +34,14 @@ jobs:
       run: |
           coverage run -m unittest tests/test_persona.py
           coverage report -m
+  automerge:
+    name: Automerge
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: automerge
+        uses: CBarreiro22/direct-merge-action@main
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          source-brach: develop
+          target-branch: ${{github.ref}}
