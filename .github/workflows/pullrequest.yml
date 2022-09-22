@@ -39,9 +39,8 @@ jobs:
     needs: job1
     runs-on: ubuntu-latest
     steps:
-      - name: automerge
-        uses: CBarreiro22/direct-merge-action@main
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          source-branch: develop
-          target-branch: main
+        - name: automerge
+          uses: CBarreiro22/automerge-action@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
+          env:
+            GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+            MERGE_LABELS: ""
