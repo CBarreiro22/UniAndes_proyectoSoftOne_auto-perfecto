@@ -43,4 +43,7 @@ jobs:
           uses: CBarreiro22/automerge-action@main
           env:
             GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
-            MERGE_LABELS: ""
+        - name: feedback
+          if: steps.automerge.outputs.mergeResult == "merged"
+          run: |
+            echo "Pull request ${{ steps.automerge.outputs.pullRequestNumber }} merged!"
