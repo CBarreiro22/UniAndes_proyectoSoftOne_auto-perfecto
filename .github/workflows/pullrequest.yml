@@ -40,7 +40,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: automerge
-          uses: 'CBarreiro22/UniAndes_proyectoSoftOne_auto-perfecto@v0.15.3'
+          uses: 'CBarreiro22/UniAndes_proyectoSoftOne_auto-perfecto@main'
           env:
             GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
             MERGE_LABELS: ""
