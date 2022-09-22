@@ -34,11 +34,3 @@ class PersonaTestCase(unittest.TestCase):
       persona_nueva = self.persona1
       self.assertIsNot(self.persona1, self.persona3)
       self.assertIs(self.persona1, persona_nueva)
-
-   def test_elemento_en_conjunto(self):
-      self.assertIn(self.persona3, self.grupo)
-      self.assertNotIn(self.persona4, self.grupo)
-
-   def test_instancia_clase(self):
-      self.assertIsInstance(self.persona1, Persona)
-      self.assertNotIsInstance(self.grupo, Persona)
