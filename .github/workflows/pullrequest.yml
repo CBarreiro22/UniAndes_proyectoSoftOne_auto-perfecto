@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: automerge
-          uses: CBarreiro22/automerge-action@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
+          uses: CBarreiro22/automerge-action@main
           env:
             GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
             MERGE_LABELS: ""
