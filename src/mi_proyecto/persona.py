@@ -1,7 +1,7 @@
 import datetime
 import numpy
 
-# aaaaaaa
+
 class Persona:
 
    def __init__(self, nombre, edad):
